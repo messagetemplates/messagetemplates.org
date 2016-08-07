@@ -116,6 +116,3 @@ The following logging libraries have support for message templates.
   _* Converts a custom capturing syntax to message templates for rendering and storage_
 
 Library missing from this list? [Let us know](https://github.com/messagetemplates/messagetemplates.org/issues/new) so that we can add it.
-
-</body>
-</html>
