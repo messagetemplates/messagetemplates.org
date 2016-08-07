@@ -33,9 +33,7 @@ log({eventId: "user_logged_in", username: username, ip_address: ipAddress });
 
 JSON is used as an example rendering here, but the concept is not tied to a particular representation.
 
-This greatly improves machine-readability, enabling queries like `username = 'alice'` on the raw log stream, but the event itself is not _human-friendly_. Log events recorded in prose make full use of our language processing and parttern recognition abilities to ease cognition. A long stream of key/value pairs is painful to visually process. Compare the representative output of the two examples above to experience this effect - what's happening in the second event?
-
-The common practice of attaching contextual data like application, thread, and process ids to structured events exacerbates this issue by burying the important event-specific properties alongside the general contextual ones. 
+This greatly improves machine-readability, enabling queries like `username = 'alice'` on the raw log stream, but the event itself is not _human-friendly_. Log events recorded in prose make full use of our language processing and pattern recognition abilities to ease cognition. A long stream of key/value pairs is painful to visually process. Compare the representative output of the two examples above to experience this effect - what's happening in the second event?
 
 Another approach employs **convention** to identify properties within a `printf`-style message:
 
@@ -84,13 +82,41 @@ When the event is displayed to a human user, or searched for text, it is _render
 // -> User alice logged in from 123.45.67.89 
 ```
 
-## Syntax (v1.0)
+## Syntax
 
-## Capturing (v1.0)
+A message template is a block of text with embedded _holes_ that name a property to be captured and inserted into the text.
 
-## Rendering (v1.0)
+* Property names are written between `{` and `}` brackets
+* Brackets can be escaped by doubling them, e.g. `{{` will be rendered as `{`
+* Property names may be prefixed with an optional operator, `@` or `$`, to control how a property is captured
+* Property names may be suffixed with an optional format, e.g. `:000`, to control how the property is rendered; the formatting semantics are application-dependent, and thus require the formatted value to be captured alongside the raw property if rendering is to take place in a different environment
+
+## Capturing
+
+A message template may be used to _capture_ properties when provided a list of argument values. Each property in the message template is associated with exactly one value in the argument list.
+
+* Templates that use numeric property names like `{0}` and `{1}` exclusively imply that arguments to the template are captured by numeric index
+* If any of the property names are non-numeric, then all arguments are captured by matching left-to-right with holes in the order in which they appear
+
+## Rendering
+
+## Examples
 
 ## Implementations
 
+The following logging libraries have support for message templates.
 
+ * [Emit](https://github.com/emit-rs/emit) (Rust*)
+ * [FsMessageTemplates](https://github.com/messagetemplates/messagetemplates-fsharp) (F#)
+ * [LibLog](https://github.com/damianh/LibLog) (C#)
+ * [Logary](https://github.com/logary/logary) (F#)
+ * [MessageTemplates](https://github.com/messagetemplates/messagetemplates-csharp) (C#)
+ * [Microsoft.Extensions.Logging](https://github.com/aspnet/Logging) (C#)
+ * [Semlogr](https://github.com/semlogr/semlogr) (Ruby)
+ * [Seqlog](https://seqlog.readthedocs.io/en/latest/) (Python)
+ * [Serilog](https://serilog.net) (C#)
+ * [serilogj](https://github.com/80dB/serilogj) (Java)
 
+  _* Converts a custom capturing syntax to message templates for rendering and storage_
+
+Library missing from this list? [Let us know](https://github.com/messagetemplates/messagetemplates.org/issues/new) so that we can add it.
