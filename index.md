@@ -1,8 +1,15 @@
----
-title: Message Templates
----
-
-<link rel="stylesheet" href="/css/messagetemplates.css" />
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Templates</title>
+  <link rel="stylesheet" href="/css/messagetemplates.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png" >
+</head>
+<body>
 
 # Message Templates
 
@@ -122,3 +129,6 @@ The following logging libraries have support for message templates.
   _* Converts a custom capturing syntax to message templates for rendering and storage_
 
 Library missing from this list? [Let us know](https://github.com/messagetemplates/messagetemplates.org/issues/new) so that we can add it.
+
+</body>
+</html>
