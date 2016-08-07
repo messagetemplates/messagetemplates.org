@@ -1,7 +1,3 @@
----
-title: Message Templates
----
-
 # Message Templates
 
 A language-neutral specification for 1) _capturing_, and 2) _rendering_, structured log events in a format that’s both human-friendly and machine-readable.
