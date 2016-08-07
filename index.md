@@ -89,7 +89,7 @@ When the event is displayed to a human user, or searched for text, it is _render
 A message template is a block of text with embedded _holes_ that name a property to be captured and inserted into the text.
 
 * Property names are written between `{` and `}` brackets
-* Brackets can be escaped by doubling them, e.g. `{{` will be rendered as `{`
+* Brackets can be escaped by doubling them, e.g. {% raw %}`{{`{% endraw %} will be rendered as `{`
 * Property names may be prefixed with an optional operator, `@` or `$`, to control how a property is captured
 * Property names may be suffixed with an optional format, e.g. `:000`, to control how the property is rendered; the formatting semantics are application-dependent, and thus require the formatted value to be captured alongside the raw property if rendering is to take place in a different environment
 
