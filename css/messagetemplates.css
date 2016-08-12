@@ -4,3 +4,6 @@ body {
     color: #333;
 }
 
+img.hidpi {
+    zoom: 50%;
+}
