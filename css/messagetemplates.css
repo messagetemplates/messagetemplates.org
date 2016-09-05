@@ -8,6 +8,10 @@ img.hidpi {
     zoom: 50%;
 }
 
+pre.highlight {
+    padding: 10px;
+}
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlighter-rouge .highlight { background: #ebf0f5; }
