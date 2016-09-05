@@ -89,7 +89,7 @@ A message template is a block of text with embedded _holes_ that name a property
 
 ### Template
 
-![Template](https://messagetemplates.org/img/railroad/Template.png){: .hidpi }
+![Template](https://messagetemplates.org/img/railroad/Template.png)
 
 ```
 Template ::= ( Text | Property )*
@@ -97,7 +97,7 @@ Template ::= ( Text | Property )*
 
 ### Text
 
-![Text](https://messagetemplates.org/img/railroad/Text.png){: .hidpi }
+![Text](https://messagetemplates.org/img/railroad/Text.png)
 
 ```
 {% raw %}Text     ::= ( [^\{] | '{{' | '}}' )+{% endraw %}
@@ -105,7 +105,7 @@ Template ::= ( Text | Property )*
 
 ### Property
 
-![Property](https://messagetemplates.org/img/railroad/Property.png){: .hidpi }
+![Property](https://messagetemplates.org/img/railroad/Property.png)
 
 ```
 Property ::= '{' ( '@' | '$' )? ( PropertyName | Index ) ( ',' Alignment )? ( ':' Format )? '}'
@@ -113,7 +113,7 @@ Property ::= '{' ( '@' | '$' )? ( PropertyName | Index ) ( ',' Alignment )? ( ':
 
 ### PropertyName
 
-![PropertyName](https://messagetemplates.org/img/railroad/PropertyName.png){: .hidpi }
+![PropertyName](https://messagetemplates.org/img/railroad/PropertyName.png)
 
 ```
 PropertyName
@@ -122,7 +122,7 @@ PropertyName
 
 ### Index
 
-![Index](https://messagetemplates.org/img/railroad/Index.png){: .hidpi }
+![Index](https://messagetemplates.org/img/railroad/Index.png)
 
 ```
 Index    ::= [0-9]+
@@ -130,7 +130,7 @@ Index    ::= [0-9]+
 
 ### Format
 
-![Format](https://messagetemplates.org/img/railroad/Format.png){: .hidpi }
+![Format](https://messagetemplates.org/img/railroad/Format.png)
 
 ```
 Format   ::= [^\{]+
@@ -138,7 +138,7 @@ Format   ::= [^\{]+
 
 ### Alignment
 
-![Alignment](https://messagetemplates.org/img/railroad/Alignment.png){: .hidpi }
+![Alignment](https://messagetemplates.org/img/railroad/Alignment.png)
 
 ```
 Alignment
