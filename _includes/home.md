@@ -87,6 +87,64 @@ A message template is a block of text with embedded _holes_ that name a property
 * Property names may be prefixed with an optional operator, `@` or `$`, to control how a property is captured
 * Property names may be suffixed with an optional format, e.g. `:000`, to control how the property is rendered; the formatting semantics are application-dependent, and thus require the formatted value to be captured alongside the raw property if rendering is to take place in a different environment
 
+### Template
+
+![Template](https://messagetemplates.org/img/railroad/Template.png){: .hidpi }
+
+```
+Template ::= ( Text | Property )*
+```
+
+### Text
+
+![Text](https://messagetemplates.org/img/railroad/Text.png){: .hidpi }
+
+```
+{% raw %}Text     ::= ( [^\{] | '{{' | '}}' )+{% endraw %}
+```
+
+### Property
+
+![Property](https://messagetemplates.org/img/railroad/Property.png){: .hidpi }
+
+```
+Property ::= '{' ( '@' | '$' )? ( PropertyName | Index ) ( ',' Alignment )? ( ':' Format )? '}'
+```
+
+### PropertyName
+
+![PropertyName](https://messagetemplates.org/img/railroad/PropertyName.png){: .hidpi }
+
+```
+PropertyName
+         ::= [0-9A-z_]+
+```
+
+### Index
+
+![Index](https://messagetemplates.org/img/railroad/Index.png){: .hidpi }
+
+```
+Index    ::= [0-9]+
+```
+
+### Format
+
+![Format](https://messagetemplates.org/img/railroad/Format.png){: .hidpi }
+
+```
+Format   ::= [^\{]+
+```
+
+### Alignment
+
+![Alignment](https://messagetemplates.org/img/railroad/Alignment.png){: .hidpi }
+
+```
+Alignment
+         ::= '-'? [0-9]+
+```
+
 ## Capturing
 
 A message template may be used to _capture_ properties when provided a list of argument values. Each property in the message template is associated with exactly one value in the argument list.
