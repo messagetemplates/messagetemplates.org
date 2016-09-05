@@ -87,6 +87,8 @@ A message template is a block of text with embedded _holes_ that name a property
 * Property names may be prefixed with an optional operator, `@` or `$`, to control how a property is captured
 * Property names may be suffixed with an optional format, e.g. `:000`, to control how the property is rendered; the formatting semantics are application-dependent, and thus require the formatted value to be captured alongside the raw property if rendering is to take place in a different environment
 
+The grammar below is maintained in the [messagetemplates/grammar](https://github.com/messagetemplates/grammar) repository.
+
 ### Template
 
 ![Template](https://messagetemplates.org/img/railroad/Template.png)
