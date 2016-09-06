@@ -94,7 +94,7 @@ The grammar below is maintained in the [messagetemplates/grammar](https://github
 ![Template](https://messagetemplates.org/img/railroad/Template.png)
 
 ```
-Template ::= ( Text | Property )*
+Template ::= ( Text | Hole )*
 ```
 
 ### Text
@@ -102,24 +102,23 @@ Template ::= ( Text | Property )*
 ![Text](https://messagetemplates.org/img/railroad/Text.png)
 
 ```
-{% raw %}Text     ::= ( [^\{] | '{{' | '}}' )+{% endraw %}
+{% raw %}Text ::= ( [^\{] | '{{' | '}}' )+{% endraw %}
 ```
 
-### Property
+### Hole
 
-![Property](https://messagetemplates.org/img/railroad/Property.png)
-
-```
-Property ::= '{' ( '@' | '$' )? ( PropertyName | Index ) ( ',' Alignment )? ( ':' Format )? '}'
-```
-
-### PropertyName
-
-![PropertyName](https://messagetemplates.org/img/railroad/PropertyName.png)
+![Hole](https://messagetemplates.org/img/railroad/Hole.png)
 
 ```
-PropertyName
-         ::= [0-9A-z_]+
+Hole ::= '{' ( '@' | '$' )? ( PropertyName | Index ) ( ',' Alignment )? ( ':' Format )? '}'
+```
+
+### Name
+
+![Name](https://messagetemplates.org/img/railroad/Name.png)
+
+```
+Name ::= [0-9A-z_]+
 ```
 
 ### Index
@@ -127,7 +126,7 @@ PropertyName
 ![Index](https://messagetemplates.org/img/railroad/Index.png)
 
 ```
-Index    ::= [0-9]+
+Index ::= [0-9]+
 ```
 
 ### Format
@@ -135,7 +134,7 @@ Index    ::= [0-9]+
 ![Format](https://messagetemplates.org/img/railroad/Format.png)
 
 ```
-Format   ::= [^\{]+
+Format ::= [^\{]+
 ```
 
 ### Alignment
@@ -143,8 +142,7 @@ Format   ::= [^\{]+
 ![Alignment](https://messagetemplates.org/img/railroad/Alignment.png)
 
 ```
-Alignment
-         ::= '-'? [0-9]+
+Alignment ::= '-'? [0-9]+
 ```
 
 ## Capturing
