@@ -23,7 +23,7 @@ body {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
     .content {
         margin-left: 20%;
         margin-right: 20%;
