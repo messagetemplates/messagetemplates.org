@@ -145,12 +145,22 @@ Format ::= [^\{]+
 Alignment ::= '-'? [0-9]+
 ```
 
-## Capturing
+## Capturing rules
 
 A message template may be used to _capture_ properties when provided a list of argument values. Each property in the message template is associated with exactly one value in the argument list.
 
 * Templates that use numeric property names like `{0}` and `{1}` exclusively imply that arguments to the template are captured by numeric index
 * If any of the property names are non-numeric, then all arguments are captured by matching left-to-right with holes in the order in which they appear
+
+## Rendering semantics
+
+Given a set of property values, and a message template, implementations should render the template by substituting property values into the locations of the corresponding _named holes_.
+
+Message template rendering should optimize for legibility and the conventions, culture, and context into which the message is being rendered:
+
+ * Named holes without corresponding property values may be rendered as the original `{...}` token, _or_ a blank/empty/sentinel value may be substituted
+ * Numeric values, dates, times and similar data may be rendered in culture-specific format
+ * Complex data may be presented in a format most familiar to the user
 
 ## Implementations
 
