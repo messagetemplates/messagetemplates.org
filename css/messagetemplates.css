@@ -1,7 +1,26 @@
 body {
-    padding: 20px;
     font-family: sans-serif;
     color: #333;
+    background-color: white;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #ebf0f5;
+    }
+
+    .content {
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: white;
+        border: 1px solid #998;
+    }
 }
 
 img.hidpi {

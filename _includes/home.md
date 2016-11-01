@@ -152,10 +152,6 @@ A message template may be used to _capture_ properties when provided a list of a
 * Templates that use numeric property names like `{0}` and `{1}` exclusively imply that arguments to the template are captured by numeric index
 * If any of the property names are non-numeric, then all arguments are captured by matching left-to-right with holes in the order in which they appear
 
-## Rendering
-
-## Examples
-
 ## Implementations
 
 The following logging libraries have support for message templates.
