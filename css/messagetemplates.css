@@ -5,7 +5,7 @@ body {
 }
 
 .content {
-    padding: 20px;
+    padding: 20px 40px;
     background-color: white;
 }
 
@@ -16,11 +16,22 @@ body {
 
     .content {
         margin-top: 20px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
         background-color: white;
         border: 1px solid #998;
     }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+img {
+    max-width: 100%;
 }
 
 img.hidpi {
@@ -29,6 +40,7 @@ img.hidpi {
 
 pre.highlight {
     padding: 10px;
+    white-space: pre-wrap;
 }
 
 /** Syntax highlighting styles */

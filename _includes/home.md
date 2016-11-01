@@ -2,7 +2,7 @@
 
 A language-neutral specification for 1) _capturing_, and 2) _rendering_, structured log events in a format that’s both human-friendly and machine-readable.
 
-![Message Templates](https://messagetemplates.org/img/MessageTemplates.png){: .hidpi }
+[![Message Templates](https://messagetemplates.org/img/MessageTemplates.png){: .hidpi }](https://messagetemplates.org/img/MessageTemplates.png)
 
 This document explains the reasons message templates are used, and provides a specification of their syntax, capturing behavior, and rendering behavior, to assist in creating implementations for various programming languages and logging interfaces.
 
