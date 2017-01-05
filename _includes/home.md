@@ -62,7 +62,7 @@ Logging APIs capture log events by positionally matching arguments with the name
 log("User {username} logged in from {ip_address}", username, ipAddress)
   // -> {
   //      "time": "2016-05-27T13:02:11.888",
-  //      "template": ("User {username} logged in from {ip_address}", 
+  //      "template": "User {username} logged in from {ip_address}", 
   //      "username": "alice", 
   //      "ip_address": "123.45.67.89"
   //    }
