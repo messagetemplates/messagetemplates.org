@@ -170,6 +170,7 @@ The following logging libraries have support for message templates.
  * [FsMessageTemplates](https://github.com/messagetemplates/messagetemplates-fsharp) (F#)
  * [LibLog](https://github.com/damianh/LibLog) (C#)
  * [Logary](https://github.com/logary/logary) (F#)
+ * [LogMagic](https://github.com/aloneguid/logmagic/#message-template-syntax) (C#)
  * [MessageTemplates](https://github.com/messagetemplates/messagetemplates-csharp) (C#)
  * [Microsoft.Extensions.Logging](https://github.com/aspnet/Logging) (C#)
  * [NLog 4.5 alpha](https://github.com/NLog/NLog/pull/1951) (C#)
