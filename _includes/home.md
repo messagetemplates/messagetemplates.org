@@ -179,6 +179,7 @@ The following logging libraries have support for message templates.
  * [Serilog](https://serilog.net) (C#)
  * [serilogj](https://github.com/80dB/serilogj) (Java)
  * [structured-log](https://github.com/structured-log/structured-log) (JavaScript)
+ * [WaterLogged](https://github.com/icecreamburglar/waterlogged) (C#)
 
   _* Converts a custom capturing syntax to message templates for rendering and storage_
 
