@@ -178,6 +178,7 @@ The following logging libraries have support for message templates.
  * [Seqlog](https://seqlog.readthedocs.io/en/latest/) (Python)
  * [Serilog](https://serilog.net) (C#)
  * [serilogj](https://github.com/80dB/serilogj) (Java)
+ * [structlog](https://github.com/danstiner/structlog) (Go)
  * [structured-log](https://github.com/structured-log/structured-log) (JavaScript)
  * [WaterLogged](https://github.com/icecreamburglar/waterlogged) (C#)
 
