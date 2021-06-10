@@ -147,10 +147,25 @@ Alignment ::= '-'? [0-9]+
 
 ## Capturing rules
 
-A message template may be used to _capture_ properties when provided a list of argument values. Each property in the message template is associated with exactly one value in the argument list.
+A message template may be used to _capture_ properties when provided a list of argument values.
+
+### Matching template properties with argument values
+
+Each property in the message template is associated with exactly one value in the argument list.
 
 * Templates that use numeric property names like `{0}` and `{1}` exclusively imply that arguments to the template are captured by numeric index
 * If any of the property names are non-numeric, then all arguments are captured by matching left-to-right with holes in the order in which they appear
+* Repeated names are not allowed
+
+Behavior in the presence of invalid/repeated names is implementation-dependent.
+
+### Operators
+
+Prefixing a property name with the `@` _structure capturing operator_ is a hint that the the structure of the corresponding argument should be preserved, for example, by serialization.
+
+The `$` _stringification operator_ hints that the corresponding argument should be converted into a string represenation for capturing.
+
+If no operator is present, capturing behavior is implementation-dependent.
 
 ## Rendering semantics
 
