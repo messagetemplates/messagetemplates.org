@@ -192,6 +192,7 @@ The following logging libraries have support for message templates.
  * [Semlogr](https://github.com/semlogr/semlogr) (Ruby)
  * [Seqlog](https://seqlog.readthedocs.io/en/latest/) (Python)
  * [Serilog](https://serilog.net) (C#)
+ * [serilogger](https://github.com/davisb10/serilogger) (TypeScript/JavaScript)
  * [serilogj](https://github.com/80dB/serilogj) (Java)
  * [structlog](https://github.com/danstiner/structlog) (Go)
  * [structured-log](https://github.com/structured-log/structured-log) (JavaScript)
