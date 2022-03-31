@@ -183,6 +183,7 @@ The following logging libraries have support for message templates.
 
  * [Emit](https://github.com/emit-rs/emit) (Rust*)
  * [FsMessageTemplates](https://github.com/messagetemplates/messagetemplates-fsharp) (F#)
+ * [Klogging](https://github.com/klogging/klogging) (Kotlin)
  * [LibLog](https://github.com/damianh/LibLog) (C#)
  * [Logary](https://github.com/logary/logary) (F#)
  * [LogMagic](https://github.com/aloneguid/logmagic/#message-template-syntax) (C#)
