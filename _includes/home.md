@@ -188,7 +188,7 @@ The following logging libraries have support for message templates.
  * [Logary](https://github.com/logary/logary) (F#)
  * [LogMagic](https://github.com/aloneguid/logmagic/#message-template-syntax) (C#)
  * [MessageTemplates](https://github.com/messagetemplates/messagetemplates-csharp) (C#)
- * [Microsoft.Extensions.Logging](https://github.com/aspnet/Logging) (C#)
+ * [Microsoft.Extensions.Logging](https://github.com/dotnet/runtime/tree/main/src/libraries/Microsoft.Extensions.Logging) (C#)
  * [NLog](https://github.com/NLog/NLog/) (NLog 4.5+) (C#)
  * [Semlogr](https://github.com/semlogr/semlogr) (Ruby)
  * [Seqlog](https://seqlog.readthedocs.io/en/latest/) (Python)
