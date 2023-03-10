@@ -110,7 +110,7 @@ Template ::= ( Text | Hole )*
 ![Hole](https://messagetemplates.org/img/railroad/Hole.png)
 
 ```
-Hole ::= '{' ( '@' | '$' )? ( PropertyName | Index ) ( ',' Alignment )? ( ':' Format )? '}'
+Hole ::= '{' ( '@' | '$' )? ( Name | Index ) ( ',' Alignment )? ( ':' Format )? '}'
 ```
 
 ### Name
