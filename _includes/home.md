@@ -187,6 +187,7 @@ The following logging libraries have support for message templates.
  * [LibLog](https://github.com/damianh/LibLog) (C#)
  * [Logary](https://github.com/logary/logary) (F#)
  * [LogMagic](https://github.com/aloneguid/logmagic/#message-template-syntax) (C#)
+ * [LunarLog](https://github.com/LunarECL/LunarLog) (C++)
  * [MessageTemplates](https://github.com/messagetemplates/messagetemplates-csharp) (C#)
  * [Microsoft.Extensions.Logging](https://github.com/dotnet/runtime/tree/main/src/libraries/Microsoft.Extensions.Logging) (C#)
  * [NLog](https://github.com/NLog/NLog/) (NLog 4.5+) (C#)
