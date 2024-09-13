@@ -189,6 +189,7 @@ The following logging libraries have support for message templates.
  * [LogMagic](https://github.com/aloneguid/logmagic/#message-template-syntax) (C#)
  * [LunarLog](https://github.com/LunarECL/LunarLog) (C++)
  * [MessageTemplates](https://github.com/messagetemplates/messagetemplates-csharp) (C#)
+ * [arnapou/message-templates](https://packagist.org/packages/arnapou/message-templates) (PHP)
  * [Microsoft.Extensions.Logging](https://github.com/dotnet/runtime/tree/main/src/libraries/Microsoft.Extensions.Logging) (C#)
  * [NLog](https://github.com/NLog/NLog/) (NLog 4.5+) (C#)
  * [Semlogr](https://github.com/semlogr/semlogr) (Ruby)
