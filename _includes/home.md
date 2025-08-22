@@ -191,6 +191,7 @@ The following logging libraries have support for message templates.
  * [MessageTemplates](https://github.com/messagetemplates/messagetemplates-csharp) (C#)
  * [arnapou/message-templates](https://packagist.org/packages/arnapou/message-templates) (PHP)
  * [Microsoft.Extensions.Logging](https://github.com/dotnet/runtime/tree/main/src/libraries/Microsoft.Extensions.Logging) (C#)
+ * [mtlog](https://github.com/willibrandon/mtlog) (Go)
  * [NLog](https://github.com/NLog/NLog/) (NLog 4.5+) (C#)
  * [Semlogr](https://github.com/semlogr/semlogr) (Ruby)
  * [Seqlog](https://seqlog.readthedocs.io/en/latest/) (Python)
